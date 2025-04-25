@@ -1,71 +1,63 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farma Koza - Domaće Koze i Jaja</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background-color: #fefcf9; color: #333; }
-    header { background-color: #8fbc8f; color: white; padding: 2rem; text-align: center; }
-    nav { background: #f0f0f0; text-align: center; padding: 1rem; }
-    nav a { margin: 0 1rem; text-decoration: none; color: #444; font-weight: bold; }
-    section { padding: 2rem; max-width: 1000px; margin: auto; }
-    .product { border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; background: white; }
-    .contact-button { display: inline-block; margin: 0.5rem 1rem 0 0; padding: 0.5rem 1rem; background-color: #8fbc8f; color: white; border: none; border-radius: 5px; text-decoration: none; }
-    footer { text-align: center; padding: 2rem; background: #f0f0f0; margin-top: 2rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Domace Niksic</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Farma Domaćih Koza</h1>
-    <p>Prodaja zdravih koza, jaradi i domaćih jaja</p>
-  </header>
 
-  <nav>
-    <a href="#ponuda">Ponuda</a>
-    <a href="#kontakt">Kontakt</a>
-    <a href="#onama">O nama</a>
-  </nav>
+    <!-- Navigacija -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Početna</a></li>
+                <li><a href="#about">O nama</a></li>
+                <li><a href="#products">Proizvodi</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="ponuda">
-    <h2>Naša ponuda</h2>
+    <!-- Sekcija Početna -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Dobrodošli na Domace Niksic!</h1>
+            <p>Proizvodi najvišeg kvaliteta, sveže i domaće.</p>
+        </div>
+    </section>
 
-    <div class="product">
-      <h3>Žive koze</h3>
-      <p>Zdrave, domaće koze uzgajane na prirodnoj ishrani. Idealne za dalji uzgoj ili mlečne proizvode.</p>
-      <a href="viber://chat?number=+382xxxxxxxx" class="contact-button">Pošalji poruku na Viber</a>
-      <a href="mailto:farma@email.com" class="contact-button">Pošalji email</a>
-    </div>
+    <!-- Sekcija O nama -->
+    <section id="about" class="about">
+        <h2>O Nama</h2>
+        <p>Mi se bavimo proizvodnjom domaćih proizvoda, sa fokusom na kvalitet i svežinu.</p>
+    </section>
 
-    <div class="product">
-      <h3>Jarad</h3>
-      <p>Sezonska prodaja jaradi. Kontaktirajte nas za dostupne primjerke i više informacija.</p>
-      <a href="viber://chat?number=+382xxxxxxxx" class="contact-button">Viber upit</a>
-    </div>
+    <!-- Sekcija Proizvodi -->
+    <section id="products" class="products">
+        <h2>Naši Proizvodi</h2>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/300" alt="Proizvod 1">
+            <p>Koze i Jarad</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/300" alt="Proizvod 2">
+            <p>Domaca Jaja</p>
+        </div>
+    </section>
 
-    <div class="product">
-      <h3>Domaća jaja</h3>
-      <p>Sveža jaja sa naše farme, slobodno uzgojene koke. Pakovanja po dogovoru.</p>
-      <a href="mailto:farma@email.com" class="contact-button">Poruči putem mejla</a>
-    </div>
-  </section>
+    <!-- Sekcija Kontakt -->
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <p>Kontaktirajte nas putem email-a ili telefona za više informacija!</p>
+    </section>
 
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Za porudžbine i pitanja, možete nas kontaktirati putem:</p>
-    <ul>
-      <li><strong>Telefon / Viber:</strong> +382 xx xxx xxx</li>
-      <li><strong>Email:</strong> farma@email.com</li>
-    </ul>
-  </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Domace Niksic. Sva prava zadržana.</p>
+    </footer>
 
-  <section id="onama">
-    <h2>O nama</h2>
-    <p>Mala porodična farma u Crnoj Gori posvećena uzgoju koza i prirodnoj proizvodnji. Naši proizvodi dolaze direktno s pašnjaka – bez hemije, bez stresa, sa puno ljubavi.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Farma Domaćih Koza. Sva prava zadržana.</p>
-  </footer>
 </body>
 </html>
