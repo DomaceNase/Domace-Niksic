@@ -8,31 +8,56 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Navigacija -->
     <header>
         <nav>
+            <div class="logo">
+                <a href="#home">Domace Niksic</a>
+            </div>
             <ul>
                 <li><a href="#home">Početna</a></li>
                 <li><a href="#about">O nama</a></li>
                 <li><a href="#products">Proizvodi</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
-    <!-- Sekcija Početna -->
+    <!-- Hero sekcija -->
     <section id="home" class="hero">
         <div class="hero-text">
             <h1>Dobrodošli na Domace Niksic!</h1>
             <p>Proizvodi najvišeg kvaliteta, sveže i domaće.</p>
+            <a href="#products" class="btn-primary">Pogledajte proizvode</a>
         </div>
     </section>
 
     <!-- Sekcija O nama -->
     <section id="about" class="about">
         <h2>O Nama</h2>
-        <p>Mi se bavimo proizvodnjom domaćih proizvoda, sa fokusom na kvalitet i svežinu.</p>
+        <p>Mi se bavimo proizvodnjom domaćih proizvoda, sa fokusom na kvalitet i svežinu. Naši proizvodi dolaze direktno sa farmi, bez industrijskih aditiva.</p>
+        <div class="icons">
+            <div class="icon">
+                <img src="https://via.placeholder.com/80" alt="Kvalitet">
+                <h3>Kvalitet</h3>
+                <p>Naši proizvodi su uvek sveži i prirodni.</p>
+            </div>
+            <div class="icon">
+                <img src="https://via.placeholder.com/80" alt="Proizvodnja">
+                <h3>Proizvodnja</h3>
+                <p>Proizvodimo sa ljubavlju i pažnjom.</p>
+            </div>
+            <div class="icon">
+                <img src="https://via.placeholder.com/80" alt="Zdravlje">
+                <h3>Zdravlje</h3>
+                <p>Naši proizvodi su dobri za vaše zdravlje.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Sekcija Proizvodi -->
@@ -40,18 +65,34 @@
         <h2>Naši Proizvodi</h2>
         <div class="product-item">
             <img src="https://via.placeholder.com/300" alt="Proizvod 1">
-            <p>Koze i Jarad</p>
+            <h3>Koze i Jarad</h3>
+            <p>Koze i jarad sa naše farme, visokog kvaliteta.</p>
+            <a href="mailto:info@domacenase.com" class="btn-secondary">Naruci</a>
         </div>
         <div class="product-item">
             <img src="https://via.placeholder.com/300" alt="Proizvod 2">
-            <p>Domaca Jaja</p>
+            <h3>Domaca Jaja</h3>
+            <p>Jaja sa farmi, 100% domaća.</p>
+            <a href="mailto:info@domacenase.com" class="btn-secondary">Naruci</a>
         </div>
     </section>
 
     <!-- Sekcija Kontakt -->
     <section id="contact" class="contact">
-        <h2>Kontakt</h2>
-        <p>Kontaktirajte nas putem email-a ili telefona za više informacija!</p>
+        <h2>Kontaktirajte nas</h2>
+        <p>Kontaktirajte nas za više informacija o proizvodima ili ako imate bilo kakvih pitanja.</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Vaše ime" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Vaš email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Vaša poruka" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Pošaljite</button>
+        </form>
     </section>
 
     <!-- Footer -->
@@ -59,5 +100,6 @@
         <p>&copy; 2025 Domace Niksic. Sva prava zadržana.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
